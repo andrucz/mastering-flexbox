@@ -1,0 +1,24 @@
+Flexbox is a new module in CSS3 that makes it easy to align elements to one another, in different directions and orders.
+
+The main idea behind flexbox is to give the container the ability to expand and to shrink elements to best use all the available space.
+
+Flexbox replaces float layouts, using less and more readable and logical code.
+
+Flexbox completely changes the way that we build one-dimensional layouts.
+
+
+
+Container
+display: flex
+flex-direction: row | row-reverse | column | column-reverse
+flex-wrap: nowrap | wrap | wrap-reverse
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+align-items: stretch | flext-start | flex-end | center | baseline
+align-content: stretch | flex-start | flex-end | center | space-between | space-around
+
+Item
+align-self: auto | stretch  flex-start | flex-end | center | baseline
+order: <integer>
+flex-grow: <integer>
+flex-shrink: <integer>
+flex-basis: auto | <length>
