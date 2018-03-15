@@ -78,6 +78,7 @@
   }
 
   &__icon-box {
+    position: relative;
   }
 
   &__icon {
@@ -87,7 +88,15 @@
   }
 
   &__notification {
-
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
   }
 
   &__user {
