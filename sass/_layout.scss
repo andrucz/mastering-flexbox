@@ -14,11 +14,12 @@
 }
 
 .content {
-
+  display: flex;
 }
 
 .sidebar {
   background-color: var(--color-gray-dark-1);
+  flex: 0 0 18%; // it prevents grow, shrink and set a width based on container
 }
 
 .hotel-view {
