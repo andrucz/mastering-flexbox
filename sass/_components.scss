@@ -117,7 +117,27 @@
   margin-top: 3.5rem;
 
   &__item {
+    position: relative;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--color-primary);
+      transform: scaleY(0);
+      transition: transform 1s;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+
+    &:hover::before {
+      transform: scaleY(1);
+    }
   }
 
   &__link {
