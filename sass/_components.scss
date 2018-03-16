@@ -136,9 +136,14 @@
       margin-bottom: .5rem;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &--active::before {
       transform: scaleY(1);
       width: 100%;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary-light);
     }
   }
 
