@@ -151,6 +151,10 @@
     &:active::before {
       background-color: var(--color-primary-light);
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
   }
 
   &__link {
